@@ -1,0 +1,799 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+</style><link rel="preload" href="/_next/static/media/2ff41235783e9f59-s.p.woff2" as="font" crossorigin="" type="font/woff2"> 
+<link rel="preload" href="/_next/static/media/bafa4140c8699f55-s.p.ttf" as="font" crossorigin="" type="font/ttf">
+<link rel="preload" as="image" imagesrcset="/_next/image?url=%2Fassets%2Fimages%2Fldtax_logo.webp&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fldtax_logo.webp&amp;w=2048&amp;q=75 2x" fetchpriority="high">
+<link rel="stylesheet" href="/_next/static/css/869ecca49f188fb7.css" data-precedence="next">
+<link rel="stylesheet" href="/_next/static/css/036dd36e716db784.css" data-precedence="next">
+<link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/runtime-e0c3cde68396e589.js"><script src="/_next/static/chunks/7730-932be94f5912cdd5.js" async="">
+</script><script src="/_next/static/chunks/2377-8f66435b9a42f4ee.js" async="">
+</script><script src="/_next/static/chunks/3218-4a1712df85cefbd8.js" async="">
+</script><script src="/_next/static/chunks/8744-3c881e9d0672062b.js" async="">
+</script><script src="/_next/static/chunks/2169-7361445c3c14708c.js" async="">
+</script><script src="/_next/static/chunks/8681-ca471740c1e7db31.js" async="">
+</script><script src="/_next/static/chunks/4417-d239793b9da5c646.js" async="">
+</script><script src="/_next/static/chunks/5384-d9b6530ed50540e0.js" async="">
+</script><script src="/_next/static/chunks/main-app-1b3f973d457a8160.js" async=""></script>
+
+<script src="/_next/static/chunks/app/layout-f3956634-6063f85ac963d587.js" async=""></script><script src="/_next/static/chunks/app/layout-4d6b0e62-1b10209cfc82d6a2.js" async=""></script><script src="/_next/static/chunks/app/not-found-36ce43f2f7b2258c.js" async=""></script><script src="/_next/static/chunks/5205-2fb845bccc12300c.js" async=""></script><script src="/_next/static/chunks/6939-a4a747d37cc98ff1.js" async=""></script><script src="/_next/static/chunks/9079-16ae578367ae61d1.js" async=""></script><script src="/_next/static/chunks/7133-09e84400b6f65c5a.js" async=""></script><script src="/_next/static/chunks/8326-a1e1b560ceaddf31.js" async=""></script><script src="/_next/static/chunks/413-99a20b74d56b18e3.js" async=""></script><script src="/_next/static/chunks/1988-c40f9a7cb3af7a70.js" async=""></script><script src="/_next/static/chunks/1279-cc5a17c8125b71a4.js" async=""></script><script src="/_next/static/chunks/2759-17a0dddfd80805b3.js" async=""></script><script src="/_next/static/chunks/3652-48bc197a0972d8f3.js" async=""></script><script src="/_next/static/chunks/1565-75d3b608c1b6cffc.js" async=""></script><script src="/_next/static/chunks/app/(home)/layout-a49eacd55f425190.js" async=""></script><script src="/_next/static/chunks/8519-68a37732455fe933.js" async=""></script><script src="/_next/static/chunks/7517-9c2f959b1187a866.js" async=""></script><script src="/_next/static/chunks/app/(home)/page-1b3f26a3ca6e147d.js" async=""></script><script src="/_next/static/chunks/app/(home)/error-ad767db99ac09a46.js" async=""></script><script src="/_next/static/chunks/app/(home)/ldtax-holdings/individual-rashid-print-offline/%5Bid%5D/page-2ee6733a5382da41.js" async=""></script><title>ভূমি উন্নয়ন কর</title><meta name="description" content="Land Development Tax Management Project"><link rel="icon" href="/assets/images/favicon.png"><meta name="next-size-adjust"><script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" nomodule=""></script>
+</head>
+
+<body class="__className_850483"><!--$--><!--$-->
+  <style>#nprogress{pointer-events:none}#nprogress .bar{background:#12633D;position:fixed;z-index:1600;top: 0;left:0;width:100%;height:6px}#nprogress .peg{display:block;position:absolute;right:0;width:100px;height:100%;box-shadow:0 0 10px #12633D,0 0 5px #12633D;opacity:1;-webkit-transform:rotate(3deg) translate(0px,-4px);-ms-transform:rotate(3deg) translate(0px,-4px);transform:rotate(3deg) translate(0px,-4px)}#nprogress .spinner{display:block;position:fixed;z-index:1600;top: 15px;right:15px}#nprogress .spinner-icon{width:18px;height:18px;box-sizing:border-box;border:2px solid transparent;border-top-color:#12633D;border-left-color:#12633D;border-radius:50%;-webkit-animation:nprogress-spinner 400ms linear infinite;animation:nprogress-spinner 400ms linear infinite}.nprogress-custom-parent{overflow:hidden;position:relative}.nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner{position:absolute}@-webkit-keyframes nprogress-spinner{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}@keyframes nprogress-spinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style><!--/$--><div class="Toastify">
+
+</div><!--/$--><div class="bg-bottleGreen lg:hidden"><p class="text-white text-14 font-medium text-center">রবিবার<!-- --> <!-- -->২৩, অগ্রহায়ন ১৪৩১<!-- --><!-- -->৮ ডিসেম্বর, ২০২৪</p>
+</div>
+<nav class="px-3 lg:px-0 bg-[#FFFFFF] shadow-xl sticky w-full z-50 top-0"><div class="lg:container lg:mx-auto px-2 lg:px-[45px] flex justify-between items-center pb-2 lg:pb-0"><a href="/">
+  <img alt="logo" fetchpriority="high" loading="eager" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[9em] h-[3em] lg:w-full lg:h-[3.5em] py-1" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Fldtax_logo.webp&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fldtax_logo.webp&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fldtax_logo.webp&amp;w=2048&amp;q=75"></a>
+  <div class="flex justify-end items-end space-x-5 grow">
+  <div class="w-full hidden lg:block">
+  <div class="flex justify-center items-center space-x-7 bg-gradient-to-l from-white to-white via-bottleGreen py-1">
+  <div class="lg:flex items-center gap-4 hidden"><p class="text-white text-14 font-medium ">রবিবার<!-- --> <!-- -->২৩, অগ্রহায়ন ১৪৩১<!-- --> <!-- -->৮ ডিসেম্বর, ২০২৪</p>
+  <button title="Change Language">
+  <span class="border border-bottleGreen px-2 bg-bottleGreen px-2 text-slate-50">বাং</span>
+  <span class="border border-bottleGreen px-2 bg-white text-bottleGreen">EN</span></button></div></div>
+  <div class="hidden lg:flex justify-end py-1 gap-2"><ul class="lg:flex items-center text-left space-y-4 lg:space-y-0 lg:gap-6 lg:text-18 p-2 lg:p-0"><li class="border-b lg:border-none p-1 lg:p-0">
+    <a class="text-semiblack font-medium hover:text-magenta" href="/">হোম</a>
+  </li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">মন্ত্রণালয়/ বিভাগ<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a href="https://minland.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি মন্ত্রণালয়</a></li><li><a href="http://www.lrb.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি সংস্কার বোর্ড</a></li><li><a href="http://lab.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি আপিল বোর্ড</a></li><li><a href="http://www.dlrs.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি রেকর্ড ও জরিপ অধিদপ্তর</a></li><li><a href="http://www.latc.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি প্রশাসন ও প্রশিক্ষণ কেন্দ্র</a></li></ul></div></div></li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">ভূমিসেবা<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a href="https://ldtax.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি উন্নয়ন কর সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%96%E0%A6%BE%E0%A6%B8%E0%A6%9C%E0%A6%AE%E0%A6%BF-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">খাস জমি বন্দোবস্ত সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A6%A4-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">অরপিত সম্পত্তি ব্যবস্তাপনা সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A6%B0%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">সায়রাত মহাল ব্যাবস্তাপনা সেবা</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/vumi-list">অন্যান্য ভূমি সেবা</a></li></ul></div></div></li><li class="border-b lg:border-none p-1 lg:p-0"><a class="text-semiblack font-medium hover:text-magenta" href="/vumiseba-form">ভূমিসেবা ফর্ম</a></li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">গার্ড ফাইল<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/ain-and-bidhi">আইন ও  বিধি</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/poripotro">পরিপত্র  প্রজ্ঞাপন</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/nitimala">নীতিমালা</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/manual">ম্যানুয়াল</a></li></ul></div></div></li></ul></div></div><button class="lg:hidden" title="Change Language"><span class="border border-bottleGreen px-2 bg-bottleGreen px-2 text-slate-50">বাং</span><span class="border border-bottleGreen px-2 bg-white text-bottleGreen">EN</span></button><div class="hidden lg:block"><div><button class="bg-bottleGreen text-white px-4 rounded-full flex items-center gap-1 text-12 lg:text-16 mb-2"><span class="text-center">লগইন</span><span><svg class="w-3 h-3 lg:w-4 lg:h-4 fill-current transition-all duration-300 stroke-[4px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></span></button></div></div></div></div><div class="px-2 pb-1 flex justify-between lg:hidden gap-2"><button class="outline-none mobile-menu-button text-2xl text-primary font-bold"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg></button><div><button class="bg-bottleGreen text-white px-4 rounded-full flex items-center gap-1 text-12 lg:text-16 mb-2"><span class="text-center">লগইন</span><span><svg class="w-3 h-3 lg:w-4 lg:h-4 fill-current transition-all duration-300 stroke-[4px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></span></button></div></div><div class="lg:hidden mobile-menu z-50 absolute bg-white w-[94vw] border border-t-0 border-gray-500 shadow-lg shadow-green-100 rounded-b-md hidden"><ul class="lg:flex items-center text-left space-y-4 lg:space-y-0 lg:gap-6 lg:text-18 p-2 lg:p-0"><li class="border-b lg:border-none p-1 lg:p-0"><a class="text-semiblack font-medium hover:text-magenta" href="/">হোম</a></li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">মন্ত্রণালয়/ বিভাগ<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a href="https://minland.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি মন্ত্রণালয়</a></li><li><a href="http://www.lrb.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি সংস্কার বোর্ড</a></li><li><a href="http://lab.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি আপিল বোর্ড</a></li><li><a href="http://www.dlrs.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি রেকর্ড ও জরিপ অধিদপ্তর</a></li><li><a href="http://www.latc.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি প্রশাসন ও প্রশিক্ষণ কেন্দ্র</a></li></ul></div></div></li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">ভূমিসেবা<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a href="https://ldtax.gov.bd/" class="block py-2 hover:text-magenta mx-4 border-b">ভূমি উন্নয়ন কর সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%96%E0%A6%BE%E0%A6%B8%E0%A6%9C%E0%A6%AE%E0%A6%BF-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8B%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A4-%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">খাস জমি বন্দোবস্ত সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A6%A4-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">অরপিত সম্পত্তি ব্যবস্তাপনা সেবা</a></li><li><a href="https://land.gov.bd/%E0%A6%B8%E0%A6%BE%E0%A7%9F%E0%A6%B0%E0%A6%BE%E0%A6%A4-%E0%A6%AE%E0%A6%B9%E0%A6%BE%E0%A6%B2-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A6%BE%E0%A6%AA%E0%A6%A8%E0%A6%BE/" class="block py-2 hover:text-magenta mx-4 border-b">সায়রাত মহাল ব্যাবস্তাপনা সেবা</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/vumi-list">অন্যান্য ভূমি সেবা</a></li></ul></div></div></li><li class="border-b lg:border-none p-1 lg:p-0"><a class="text-semiblack font-medium hover:text-magenta" href="/vumiseba-form">ভূমিসেবা ফর্ম</a></li><li class="group border-b lg:border-none p-1 lg:p-0"><div class="inline-block relative"><button class="text-semiblack focus:outline-none font-medium text-center inline-flex items-center">গার্ড ফাইল<svg class="ml-2" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.875 5.2125L2.26219 4.6875L12.7566 4.6875L13.125 5.19375L7.84969 10.3125H7.07437L1.875 5.2125Z" fill="#1E433D"></path></svg></button><div class="custom-scrollbar w-44 max-h-60 overflow-y-auto z-50 absolute   bg-white divide-y divide-gray-100 rounded-lg shadow-xl hidden"><ul class="py-2 text-semiblack pb-3 flex flex-col space-y-2 text-14" aria-labelledby="dropdownHoverButton1"><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/ain-and-bidhi">আইন ও  বিধি</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/poripotro">পরিপত্র  প্রজ্ঞাপন</a>
+  </li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/nitimala">নীতিমালা</a></li><li><a class="block py-2 hover:text-magenta mx-4 border-b" href="/manual">ম্যানুয়াল</a></li></ul></div></div></li></ul></div></nav><!--$-->
+
+  <div class="flex items-center justify-center"><iframe src="https://ldtax-gov-bd.github.io/dakhila-dowlotpur-749/" width="900" height="600" style="border:1px solid #ccc">Your browser does not support iframes.</iframe></div>
+    <!--/$--><!--$--><div class="2xl:container 2xl:mx-auto"><div class="h-[28px] w-full bg-gradient-to-r from-white to-white via-bottleGreen mb-7"></div><div class="bg-[#E4FFE2]"><div class="lg:container lg:mx-auto lg:px-[45px] flex flex-col lg:flex-row space-y-7 lg:space-y-0 justify-center lg:justify-normal pt-12 px-5"><div class="flex justify-around lg:justify-normal gap-10 lg:w-[30%]"><div class="lg:flex lg:flex-col lg:space-y-2"><h3 class="text-14 lg:text-20 font-medium text-bottleGreen pb-2 lg:pb-0 text-start lg:text-center">গুরুত্বপূর্ণ লিঙ্ক</h3><ul class="lg:flex lg:flex-col lg:space-y-2"><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a target="_blank" class="text-12 lg:text-13 font-medium" href="https://bangladesh.gov.bd/index.php">বাংলাদেশ জাতীয় তথ্য বাতায়ন</a></li><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a target="_blank" class="text-12 lg:text-13 font-medium" href="https://minland.gov.bd/">ভূমি মন্ত্রণালয়</a></li><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a target="_blank" class="text-12 lg:text-13 font-medium" href="http://www.pressinform.gov.bd/">তথ্য অধিদপ্তর (পিআইডি)</a></li><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a target="_blank" class="text-12 lg:text-13 font-medium" href="https://www.grs.gov.bd/">অভিযোগ প্রতিকার ব্যবস্থা</a></li></ul></div><div class="pt-8 lg:pt-10"><ul class="lg:flex lg:flex-col lg:space-y-2"><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a class="text-12 lg:text-13 font-medium" href="/nitimala">গোপনীয়তা নীতি</a></li><li class="flex items-center"><img alt="LSG" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-6 h-6" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftriangleright.svg&amp;w=2048&amp;q=75"><a class="text-12 lg:text-13 font-medium" href="/faq">সাধারণ জিজ্ঞাসা</a></li></ul></div></div><div class="flex flex-col space-y-6 lg:space-y-0 lg:w-[70%]"><div class="flex flex-col lg:flex-row justify-center lg:justify-between gap-4 lg:gap-0"><div class="flex flex-col items-center lg:ml-[4.5em]"><h3 class="text-14 lg:text-18">পরিকল্পনা ও বাস্তবায়নে</h3><div class="w-[10em] lg:w-[12.5em] p-1 rounded-sm flex flex-col items-center"><a class="" target="_blank" href="https://lmap.minland.gov.bd/"><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="lg:w-[200px] lg:h-[115px]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Fgovt_logo.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fgovt_logo.png&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fgovt_logo.png&amp;w=2048&amp;q=75"></a></div></div><div class="flex justify-between lg:gap-[3.3rem]"><div class="flex flex-col items-center gap-1"><h3 class="text-14 lg:text-18">অ্যাপ ডাউনলোড করুন</h3><div class="flex items-center gap-2"><a href="#" target="_blank"><img alt="Play Store Image" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-28 lg:w-32" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Fplay_store.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fplay_store.png&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fplay_store.png&amp;w=2048&amp;q=75"></a><a href="#" target="_blank"><img alt="Play Store Image" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-28 lg:w-32 h-[2rem] lg:h-[2.4rem]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Fios_store.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fios_store.png&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fios_store.png&amp;w=2048&amp;q=75"></a></div></div><div class="flex flex-col space-y-3 lg:items-end "><h3 class="text-15 lg:text-18 text-semiblack  text-center lg:text-right">সামাজিক যোগাযোগ</h3><div class="flex justify-center lg:justify-normal space-x-3 lg:space-x-5 pl-2 lg:pl-0"><a target="_blank" href="https://www.facebook.com/MinlandGovBd"><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2FFacebook.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2FFacebook.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2FFacebook.svg&amp;w=2048&amp;q=75"></a><a target="_blank" href="https://x.com/MinlandGovBd/header_photo"><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Ftwitter.png&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Ftwitter.png&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Ftwitter.png&amp;w=2048&amp;q=75"></a><a target="_blank" href="https://www.instagram.com/minlandgovbd?igsh=MWp4djJhamw4djIxMQ=="><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Finstagram.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Finstagram.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Finstagram.svg&amp;w=2048&amp;q=75"></a><a target="_blank" href="https://www.youtube.com/@minland-gov-bd"><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[18px] h-[18px] lg:w-[34px] lg:h-[34px]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2FYoutube.svg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2FYoutube.svg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2FYoutube.svg&amp;w=2048&amp;q=75"></a></div></div></div></div><div class="flex flex-col space-y-2 lg:space-y-3 bg-slate-50 lg:bg-transparent"><h3 class="text-center lg:text-right text-14 lg:text-18">কারিগরি সহায়তায়</h3><div class="flex justify-end"><div class="bg-cover w-[12em] lg:w-[16em] flex justify-end p-1 lg:py-2" style="background-image:url('assets/images/logo_back.png')"><div class=""><a target="_blank" href="https://mysoftheaven.com/"><img alt="images" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1" class="w-[10em] lg:w-[13em]" style="color:transparent" srcset="/_next/image?url=%2Fassets%2Fimages%2Fmysoft_heaven_logo.jpg&amp;w=1080&amp;q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Fmysoft_heaven_logo.jpg&amp;w=2048&amp;q=75 2x" src="/_next/image?url=%2Fassets%2Fimages%2Fmysoft_heaven_logo.jpg&amp;w=2048&amp;q=75"></a></div></div></div></div></div></div></div><p class="text-center font-medium text-12 leading-[31px] py-4">কপিরাইট © <!-- -->২০২৪<!-- --> সর্বস্বত্ব সংরক্ষিত ভূমি ব্যবস্থাপনা অটোমেশন প্রকল্প ,<a href="https://land.gov.bd">ভূমি মন্ত্রণালয়।</a></p></div><!--/$--><script src="/_next/static/chunks/runtime-e0c3cde68396e589.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/2ff41235783e9f59-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/bafa4140c8699f55-s.p.ttf\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/ttf\"}]\n3:HL[\"/_next/static/css/869ecca49f188fb7.css\",\"style\"]\n4:HL[\"/_next/static/css/036dd36e716db784.css\",\"style\"]\n0:\"$L5\"\n"])</script><script>self.__next_f.push([1,"6:I[33728,[],\"\"]\n8:I[29928,[],\"\"]\n9:\"$Sreact.suspense\"\na:I[33955,[\"8541\",\"static/chunks/app/layout-f3956634-6063f85ac963d587.js\",\"8016\",\"static/chunks/app/layout-4d6b0e62-1b10209cfc82d6a2.js\"],\"default\",1]\nb:I[87415,[\"8541\",\"static/chunks/app/layout-f3956634-6063f85ac963d587.js\",\"8016\",\"static/chunks/app/layout-4d6b0e62-1b10209cfc82d6a2.js\"],\"ToastContainer\"]\nc:I[56954,[],\"\"]\nd:I[7264,[],\"\"]\ne:I[14307,[\"9160\",\"static/chunks/app/not-found-36ce43f2f7b2258c.js\"],\"\"]\n"])</script><script>self.__next_f.push([1,"f:I[87407,[\"5205\",\"static/chunks/5205-2fb845bccc12300c.js\",\"6939\",\"static/chunks/6939-a4a747d37cc98ff1.js\",\"9079\",\"static/chunks/9079-16ae578367ae61d1.js\",\"7133\",\"static/chunks/7133-09e84400b6f65c5a.js\",\"8326\",\"static/chunks/8326-a1e1b560ceaddf31.js\",\"413\",\"static/chunks/413-99a20b74d56b18e3.js\",\"1988\",\"static/chunks/1988-c40f9a7cb3af7a70.js\",\"1279\",\"static/chunks/1279-cc5a17c8125b71a4.js\",\"2759\",\"static/chunks/2759-17a0dddfd80805b3.js\",\"3652\",\"static/chunks/3652-48bc197a0972d8f3.js\",\"1565\",\"static/chunks/1565-75d3b608c1b6cffc.js\",\"9057\",\"static/chunks/app/(home)/layout-a49eacd55f425190.js\"],\"\"]\n"])</script><script>self.__next_f.push([1,"10:I[90413,[\"5205\",\"static/chunks/5205-2fb845bccc12300c.js\",\"6939\",\"static/chunks/6939-a4a747d37cc98ff1.js\",\"9079\",\"static/chunks/9079-16ae578367ae61d1.js\",\"7133\",\"static/chunks/7133-09e84400b6f65c5a.js\",\"8326\",\"static/chunks/8326-a1e1b560ceaddf31.js\",\"413\",\"static/chunks/413-99a20b74d56b18e3.js\",\"8519\",\"static/chunks/8519-68a37732455fe933.js\",\"7517\",\"static/chunks/7517-9c2f959b1187a866.js\",\"1565\",\"static/chunks/1565-75d3b608c1b6cffc.js\",\"5608\",\"static/chunks/app/(home)/page-1b3f26a3ca6e147d.js\"],\"Image\"]\n1"])</script><script>self.__next_f.push([1,"1:I[13714,[\"6373\",\"static/chunks/app/(home)/error-ad767db99ac09a46.js\"],\"\"]\n13:I[48297,[],\"\"]\n14:I[36685,[\"3466\",\"static/chunks/app/(home)/ldtax-holdings/individual-rashid-print-offline/%5Bid%5D/page-2ee6733a5382da41.js\"],\"\"]\n15:I[68326,[\"5205\",\"static/chunks/5205-2fb845bccc12300c.js\",\"6939\",\"static/chunks/6939-a4a747d37cc98ff1.js\",\"9079\",\"static/chunks/9079-16ae578367ae61d1.js\",\"7133\",\"static/chunks/7133-09e84400b6f65c5a.js\",\"8326\",\"static/chunks/8326-a1e1b560ceaddf31.js\",\"413\",\"static/chunks/413-99a20b74d"])</script><script>self.__next_f.push([1,"56b18e3.js\",\"8519\",\"static/chunks/8519-68a37732455fe933.js\",\"7517\",\"static/chunks/7517-9c2f959b1187a866.js\",\"1565\",\"static/chunks/1565-75d3b608c1b6cffc.js\",\"5608\",\"static/chunks/app/(home)/page-1b3f26a3ca6e147d.js\"],\"\"]\n"])</script><script>self.__next_f.push([1,"5:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/869ecca49f188fb7.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/036dd36e716db784.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L6\",null,{\"buildId\":\"vYGPwK4Fax5wikLwqOIaU\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/ldtax-holdings/individual-rashid-print-offline/RVo4Nm5kQ1FWWTNQSFRaVFdoMlF5dz09\",\"initialTree\":[\"\",{\"children\":[\"(home)\",{\"children\":[\"ldtax-holdings\",{\"children\":[\"individual-rashid-print-offline\",{\"children\":[[\"id\",\"RVo4Nm5kQ1FWWTNQSFRaVFdoMlF5dz09\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L7\"],\"globalErrorComponent\":\"$8\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_850483\",\"children\":[[\"$\",\"$9\",null,{\"fallback\":[\"$\",\"div\",null,{\"children\":\"Loading...\"}],\"children\":[[\"$\",\"$9\",null,{\"fallback\":null,\"children\":[\"$\",\"$La\",null,{\"color\":\"#12633D\",\"showSpinner\":false,\"height\":6}]}],[\"$\",\"$Lb\",null,{\"autoClose\":3000,\"closeButton\":false}]]}],[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[\"$\",\"$Le\",null,{}],\"notFoundStyles\":[],\"childProp\":{\"current\":[null,[[\"$\",\"$Lf\",null,{}],[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(home)\",\"children\"],\"loading\":[\"$\",\"section\",null,{\"className\":\"bg-white w-full h-screen flex justify-center items-center\",\"children\":[\"$\",\"$L10\",null,{\"src\":\"/assets/images/new_logo.png\",\"className\":\"animate-pulse w-[200px] h-[115px]\",\"width\":1000,\"height\":1000,\"alt\":\"image error\"}]}],\"loadingStyles\":[],\"hasLoading\":true,\"error\":\"$11\",\"errorStyles\":[],\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(home)\",\"children\",\"ldtax-holdings\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(home)\",\"children\",\"ldtax-holdings\",\"children\",\"individual-rashid-print-offline\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$\",\"$Lc\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(home)\",\"children\",\"ldtax-holdings\",\"children\",\"individual-rashid-print-offline\",\"children\",[\"id\",\"RVo4Nm5kQ1FWWTNQSFRaVFdoMlF5dz09\",\"d\"],\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$Ld\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$L12\",[\"$\",\"$L13\",null,{\"propsForComponent\":{\"params\":{\"id\":\"RVo4Nm5kQ1FWWTNQSFRaVFdoMlF5dz09\"},\"searchParams\":{}},\"Component\":\"$14\",\"isStaticGeneration\":false}],null],\"segment\":\"__PAGE__\"},\"styles\":[]}],\"segment\":[\"id\",\"RVo4Nm5kQ1FWWTNQSFRaVFdoMlF5dz09\",\"d\"]},\"styles\":[]}],\"segment\":\"individual-rashid-print-offline\"},\"styles\":[]}],\"segment\":\"ldtax-holdings\"},\"styles\":[]}],[\"$\",\"$9\",null,{\"fallback\":null,\"children\":[\"$\",\"div\",null,{\"className\":\"2xl:container 2xl:mx-auto\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h-[28px] w-full bg-gradient-to-r from-white to-white via-bottleGreen mb-7\"}],[\"$\",\"div\",null,{\"className\":\"bg-[#E4FFE2]\",\"children\":[\"$\",\"div\",null,{\"className\":\"lg:container lg:mx-auto lg:px-[45px] flex flex-col lg:flex-row space-y-7 lg:space-y-0 justify-center lg:justify-normal pt-12 px-5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex justify-around lg:justify-normal gap-10 lg:w-[30%]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"lg:flex lg:flex-col lg:space-y-2\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-14 lg:text-20 font-medium text-bottleGreen pb-2 lg:pb-0 text-start lg:text-center\",\"children\":\"গুরুত্বপূর্ণ লিঙ্ক\"}],[\"$\",\"ul\",null,{\"className\":\"lg:flex lg:flex-col lg:space-y-2\",\"children\":[[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":\"https://bangladesh.gov.bd/index.php\",\"target\":\"_blank\",\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"বাংলাদেশ জাতীয় তথ্য বাতায়ন\"}]]}],[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":\"https://minland.gov.bd/\",\"target\":\"_blank\",\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"ভূমি মন্ত্রণালয়\"}]]}],[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":\"http://www.pressinform.gov.bd/\",\"target\":\"_blank\",\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"তথ্য অধিদপ্তর (পিআইডি)\"}]]}],[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":\"https://www.grs.gov.bd/\",\"target\":\"_blank\",\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"অভিযোগ প্রতিকার ব্যবস্থা\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"pt-8 lg:pt-10\",\"children\":[\"$\",\"ul\",null,{\"className\":\"lg:flex lg:flex-col lg:space-y-2\",\"children\":[[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":\"/nitimala\",\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"গোপনীয়তা নীতি\"}]]}],[\"$\",\"li\",null,{\"className\":\"flex items-center\",\"children\":[[\"$\",\"$L10\",null,{\"src\":\"/assets/images/triangleright.svg\",\"className\":\"w-6 h-6\",\"width\":1000,\"height\":1000,\"alt\":\"LSG\"}],[\"$\",\"$L15\",null,{\"href\":{\"pathname\":\"/faq\"},\"shallow\":true,\"className\":\"text-12 lg:text-13 font-medium\",\"children\":\"সাধারণ জিজ্ঞাসা\"}]]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col space-y-6 lg:space-y-0 lg:w-[70%]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col lg:flex-row justify-center lg:justify-between gap-4 lg:gap-0\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center lg:ml-[4.5em]\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-14 lg:text-18\",\"children\":\"পরিকল্পনা ও বাস্তবায়নে\"}],[\"$\",\"div\",null,{\"className\":\"w-[10em] lg:w-[12.5em] p-1 rounded-sm flex flex-col items-center\",\"children\":[\"$\",\"$L15\",null,{\"className\":\"\",\"href\":\"https://lmap.minland.gov.bd/\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"src\":\"/assets/images/govt_logo.png\",\"className\":\"lg:w-[200px] lg:h-[115px]\",\"height\":1000,\"width\":1000,\"alt\":\"images\"}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between lg:gap-[3.3rem]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex flex-col items-center gap-1\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-14 lg:text-18\",\"children\":\"অ্যাপ ডাউনলোড করুন\"}],[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2\",\"children\":[[\"$\",\"a\",null,{\"href\":\"#\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"className\":\"w-28 lg:w-32\",\"src\":\"/assets/images/play_store.png\",\"width\":1000,\"height\":1000,\"alt\":\"Play Store Image\"}]}],[\"$\",\"a\",null,{\"href\":\"#\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"className\":\"w-28 lg:w-32 h-[2rem] lg:h-[2.4rem]\",\"src\":\"/assets/images/ios_store.png\",\"width\":1000,\"height\":1000,\"alt\":\"Play Store Image\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col space-y-3 lg:items-end \",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-15 lg:text-18 text-semiblack  text-center lg:text-right\",\"children\":\"সামাজিক যোগাযোগ\"}],[\"$\",\"div\",null,{\"className\":\"flex justify-center lg:justify-normal space-x-3 lg:space-x-5 pl-2 lg:pl-0\",\"children\":[[\"$\",\"$L15\",null,{\"href\":\"https://www.facebook.com/MinlandGovBd\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"className\":\"w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]\",\"src\":\"/assets/images/Facebook.svg\",\"height\":1000,\"width\":1000,\"alt\":\"images\"}]}],[\"$\",\"$L15\",null,{\"href\":\"https://x.com/MinlandGovBd/header_photo\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"className\":\"w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]\",\"src\":\"/assets/images/twitter.png\",\"height\":1000,\"width\":1000,\"alt\":\"images\"}]}],[\"$\",\"$L15\",null,{\"href\":\"https://www.instagram.com/minlandgovbd?igsh=MWp4djJhamw4djIxMQ==\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"src\":\"/assets/images/instagram.svg\",\"height\":1000,\"width\":1000,\"alt\":\"images\",\"className\":\"w-[18px] h-[18px] lg:w-[34px] lg:h-[30px]\"}]}],[\"$\",\"$L15\",null,{\"href\":\"https://www.youtube.com/@minland-gov-bd\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"src\":\"/assets/images/Youtube.svg\",\"height\":1000,\"width\":1000,\"alt\":\"images\",\"className\":\"w-[18px] h-[18px] lg:w-[34px] lg:h-[34px]\"}]}]]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-col space-y-2 lg:space-y-3 bg-slate-50 lg:bg-transparent\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-center lg:text-right text-14 lg:text-18\",\"children\":\"কারিগরি সহায়তায়\"}],[\"$\",\"div\",null,{\"className\":\"flex justify-end\",\"children\":[\"$\",\"div\",null,{\"className\":\"bg-cover w-[12em] lg:w-[16em] flex justify-end p-1 lg:py-2\",\"style\":{\"backgroundImage\":\"url('assets/images/logo_back.png')\"},\"children\":[\"$\",\"div\",null,{\"className\":\"\",\"children\":[\"$\",\"$L15\",null,{\"href\":\"https://mysoftheaven.com/\",\"target\":\"_blank\",\"children\":[\"$\",\"$L10\",null,{\"src\":\"/assets/images/mysoft_heaven_logo.jpg\",\"className\":\"w-[10em] lg:w-[13em]\",\"height\":1000,\"width\":1000,\"alt\":\"images\"}]}]}]}]}]]}]]}]]}]}],[\"$\",\"p\",null,{\"className\":\"text-center font-medium text-12 leading-[31px] py-4\",\"children\":[\"কপিরাইট © \",\"২০২৪\",\" সর্বস্বত্ব সংরক্ষিত ভূমি ব্যবস্থাপনা অটোমেশন প্রকল্প ,\",[\"$\",\"a\",null,{\"href\":\"https://land.gov.bd\",\"children\":\"ভূমি মন্ত্রণালয়।\"}]]}]]}]}]],null],\"segment\":\"(home)\"},\"styles\":[]}]]}]}],null]}]]\n"])</script><script>self.__next_f.push([1,"7:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"ভূমি উন্নয়ন কর\"}],[\"$\",\"meta\",\"2\",{\"name\":\"description\",\"content\":\"Land Development Tax Management Project\"}],[\"$\",\"meta\",\"3\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1.0\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/assets/images/favicon.png\"}],[\"$\",\"meta\",\"5\",{\"name\":\"next-size-adjust\"}]]\n12:null\n"])</script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8eed9a3b4ba25e40',t:'MTczMzY2OTc5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><next-route-announcer style="position: absolute;"></next-route-announcer></body></html>
